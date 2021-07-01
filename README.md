@@ -138,8 +138,8 @@ show inline image by using ImageSpan.
 ImageSpan(
     ImageProvider image, {
     Key key,
-    @required double imageWidth,
-    @required double imageHeight,
+    @@required double imageWidth,
+    @@required double imageHeight,
     EdgeInsets margin,
     int start: 0,
     ui.PlaceholderAlignment alignment = ui.PlaceholderAlignment.bottom,
@@ -171,8 +171,8 @@ ImageSpan(AssetImage("xxx.jpg"),
 | parameter   | description                                                                   | default  |
 | ----------- | ----------------------------------------------------------------------------- | -------- |
 | image       | The image to display(ImageProvider).                                          | -        |
-| imageWidth  | The width of image(not include margin)                                        | required |
-| imageHeight | The height of image(not include margin)                                       | required |
+| imageWidth  | The width of image(not include margin)                                        | @required |
+| imageHeight | The height of image(not include margin)                                       | @required |
 | margin      | The margin of image                                                           | -        |
 | actualText  | Actual text, take care of it when enable selection,something likes "\[love\]" | '\uFFFC' |
 | start       | Start index of text,take care of it when enable selection.                    | 0        |
@@ -205,7 +205,7 @@ ExtendedNetworkImageProvider(
 
 | parameter   | description                                                                           | default             |
 | ----------- | ------------------------------------------------------------------------------------- | ------------------- |
-| url         | The URL from which the image will be fetched.                                         | required            |
+| url         | The URL from which the image will be fetched.                                         | @required            |
 | scale       | The scale to place in the [ImageInfo] object of the image.                            | 1.0                 |
 | headers     | The HTTP headers that will be used with [HttpClient.get] to fetch image from network. | -                   |
 | cache       | whether cache image to local                                                          | false               |

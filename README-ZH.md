@@ -144,8 +144,8 @@ class MySpecialTextSpanBuilder extends SpecialTextSpanBuilder {
 ImageSpan(
     ImageProvider image, {
     Key key,
-    @required double imageWidth,
-    @required double imageHeight,
+    @@required double imageWidth,
+    @@required double imageHeight,
     EdgeInsets margin,
     int start: 0,
     ui.PlaceholderAlignment alignment = ui.PlaceholderAlignment.bottom,
@@ -211,7 +211,7 @@ ExtendedNetworkImageProvider(
 
 | 参数        | 描述                | 默认                |
 | ----------- | ------------------- | ------------------- |
-| url         | 网络请求地址        | required            |
+| url         | 网络请求地址        | @required            |
 | scale       | ImageInfo中的scale  | 1.0                 |
 | headers     | HttpClient的headers | -                   |
 | cache       | 是否缓存到本地      | false               |
